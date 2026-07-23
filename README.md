@@ -31,15 +31,7 @@ trial-and-error deposition runs.
 4. **KNN Regressor** — features scaled with `StandardScaler`; `k` chosen by evaluating a small range of candidates rather than a fixed guess.
 5. **Evaluation** — both models scored with R² and MSE on the same held-out test set.
 
-### Exploratory data analysis
 
-![Correlation heatmap](images/correlation_heatmap.png)
-
-![Surface roughness vs. each process parameter](images/feature_vs_target.png)
-
-### Choosing k for KNN
-
-![KNN k selection](images/knn_k_selection.png)
 
 ## Results
 
@@ -48,7 +40,6 @@ trial-and-error deposition runs.
 | Random Forest | `[0.930]` | `[0.0871]` |
 | KNN (k=`[6]`) | `[0.884]` | `[0.1430]` |
 
-![Actual vs predicted surface roughness](images/actual_vs_predicted.png)
 
 *(Note: with only 27 samples, these results are a proof-of-concept comparison rather than a
 statistically robust conclusion — a larger dataset would be needed to generalize further.)*
